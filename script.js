@@ -33,6 +33,7 @@ document.getElementById('btn-copy').addEventListener("click", function(){
   navigator.clipboard.writeText(copiaTexto.value);
   alert("O texto foi copiado!!");
   document.getElementById('msg').value='';
+  copiaTexto.reset();
  });
 
 function checkchar(e) {
